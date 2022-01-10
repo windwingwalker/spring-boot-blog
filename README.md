@@ -5,9 +5,9 @@ This application is a part of a series, which is aiming at writting a basic web 
 
 ## Tech Stack
 ### Basic
-Language: Java 11
-Framework: Spring Boot 2.5.6
-Dependency Management: Maven
+- Language: Java 11
+- Framework: Spring Boot 2.5.6
+- Dependency Management: Maven
 
 ### Advanced: Development tools
 - VSCode
