@@ -7,7 +7,7 @@
 	// Update the 'dockerComposeFile' list if you have more compose files or use different names.
 	// The .devcontainer/docker-compose.yml file contains any overrides you need/want to make.
 	"dockerComposeFile": [
-		"../docker-compose.yml",
+		//"docker-compose-dev.yml",
 		"docker-compose.yml"
 	],
 
@@ -21,16 +21,9 @@
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
-		"JAVA_HOME": "/usr/local/openjdk-11/bin/java",
+		"JAVA_HOME": "/usr/local/openjdk-11",
 		"maven.executable.path": "/usr/share/maven/bin/mvn"
 	},
-
-	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": [
-		"vscjava.vscode-java-pack",
-		"gabrielbb.vscode-lombok",
-		"ms-azuretools.vscode-docker"
-	]
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
@@ -47,33 +40,3 @@
 	// Uncomment to connect as a non-root user if you've added one. See https://aka.ms/vscode-remote/containers/non-root.
 	// "remoteUser": "vscode"
 }
-
-// 	// Sets the run context to one level up instead of the .devcontainer folder.
-// 	//"context": "..",
-
-// 	// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
-// 	//"dockerFile": "../Dockerfile",
-// 	"dockerComposeFile": "docker-compose.yml",
-//   	"service": "web",
-// 	"workspaceFolder": "/home/app",
-// 	"shutdownAction": "stopCompose",
-
-
-// 	//"mounts": ["source=maven-repo,target=/root/.m2,type=volume"]
-
-// 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-// 	// "forwardPorts": [],
-
-// 	// Uncomment the next line to run commands after the container is created - for example installing curl.
-// 	// "postCreateCommand": "apt-get update && apt-get install -y curl",
-
-// 	// Uncomment when using a ptrace-based debugger like C++, Go, and Rust
-// 	// "runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
-
-// 	// Uncomment to use the Docker CLI from inside the container. See https://aka.ms/vscode-remote/samples/docker-from-docker.
-// 	// "mounts": [ "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind" ],
-
-// 	// Uncomment to connect as a non-root user if you've added one. See https://aka.ms/vscode-remote/containers/non-root.
-// 	// "remoteUser": "vscode"
-// }
-
